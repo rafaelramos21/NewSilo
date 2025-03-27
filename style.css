@@ -8,3 +8,66 @@
 .section topo{
     width: 100%;
 }
+
+.form{
+	padding:2rem;
+	width: 400px;
+	height: calc(100% + 30px);
+	float: right;
+	position: relative;
+	top:-15px;
+	border-width: 12px;
+	border-color:  rgb(68, 230, 98);
+	border-style: solid;
+	background-color: #5c54ed;
+	background-clip:padding-box;
+	color: #fdfdfd;
+}
+
+.form h2{
+	margin-bottom: 1rem;
+}
+
+.form-input-container{
+	display: flex;
+}
+
+.form input{
+	padding: 0.8rem;
+	border: none;
+	flex: 1;
+	border-radius: 4px;
+}
+
+.form button{
+	padding: 0.8rem;
+	min-width: 50px;
+	margin-left: 8px;
+	background-color: #8dd0f5;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#weather-data{
+	border-top: 1px solid white;
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+#weather-data h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.6rem;
+}
+
+#weather-data h2{
+	font-size: 1rem;
+}
+
+#weather-data span{
+	margin: 0.6rem;
+}
