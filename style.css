@@ -71,3 +71,23 @@
 #weather-data span{
 	margin: 0.6rem;
 }
+#descripition-conteiner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.6rem 0;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+#details-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#details-container #umidity{
+	border-right: 1px solid #fff;
+	margin: 0.6rem;
+	padding: 0.6rem;
+}
