@@ -9,53 +9,54 @@
     width: 100%;
 }
 
-.form{
-	padding:2rem;
-	width: 400px;
-	height: calc(100% + 30px);
-	float: right;
-	position: relative;
-	top:-15px;
-	border-width: 12px;
-	border-color:  rgb(68, 230, 98);
-	border-style: solid;
-	background-color: #5c54ed;
-	background-clip:padding-box;
-	color: #fdfdfd;
+.form {
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
 }
 
-.form h2{
-	margin-bottom: 1rem;
+.form h2 {
+    margin-bottom: 15px;
 }
 
-.form-input-container{
-	display: flex;
+.form-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
-.form input{
-	padding: 0.8rem;
-	border: none;
-	flex: 1;
-	border-radius: 4px;
+.form-input-container input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.form button{
-	padding: 0.8rem;
-	min-width: 50px;
-	margin-left: 8px;
-	background-color: #8dd0f5;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
+.form-input-container button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#weather-data{
-	border-top: 1px solid white;
-	margin-top: 1.5rem;
-	padding-top: 1.5rem;
-	text-align: center;
+.form-input-container button:hover {
+    background: #0056b3;
 }
+
+#weather-data {
+    margin-top: 20px;
+}
+
 
 #weather-data h2{
 	display: flex;
@@ -90,4 +91,95 @@
 	border-right: 1px solid #fff;
 	margin: 0.6rem;
 	padding: 0.6rem;
+}
+
+.BG-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Menu de navegação */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.banner {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(0, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form {
+        top: 50%;
+        width: 80%;
+        left: 50%;
+    }
+
+    .form-input-container {
+        flex-direction: column;
+    }
+
+    .form-input-container input {
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
